@@ -1,0 +1,23 @@
+{
+  "name": "express-starter",
+  "version": "1.0.0",
+  "description": "Express.js starter project with debugging enable.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "inspector": "node-inspector -d 5858 -p 8080",
+    "live-reload": "nodemon --debug index.js",
+    "open-browser": "opn http://localhost:8080/?port=5858",
+    "debug": "npm run inspector & npm run open-browser & npm run live-reload",
+    "test": "mocha test"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
+  }
+}
