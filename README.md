@@ -36,6 +36,12 @@ Start the development server on [`http://localhost:3000`](http://localhost:3000/
 npm run debug
 ```
 
+Running without debugging enabled:
+
+```sh
+npm start
+```
+
 ### Testing
 
 Run all test located in `test/` with:
